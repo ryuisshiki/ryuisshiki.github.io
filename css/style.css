@@ -202,15 +202,17 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    background-color: var(--theme-dark);
+    color: var(--theme-text);
 }
 
 footer {
-    background-color: var(--theme-dark);
+    background-color: var(--theme-bg);
     padding: 4em 1em;
     line-height: 1.5em;
     text-align: center;
     font-size: 0.9rem;
-    color: var(--theme-bg);
+    color: var(--theme-text);
     font-family: var(--theme-font);
 }
 
@@ -270,15 +272,15 @@ hr {
 main {
     color: var(--normal-text);
     text-shadow:
-        0em 0em 0.4em var(--theme-bg),
-        0.1em 0em 0.2em var(--theme-bg),
-        -0.1em 0em 0.2em var(--theme-bg),
-        0em 0.1em 0.2em var(--theme-bg),
-        0em -0.1em 0.2em var(--theme-bg),
-        0.1em 0.1em 0.2em var(--theme-bg),
-        0.1em -0.1em 0.2em var(--theme-bg),
-        -0.1em 0.1em 0.2em var(--theme-bg),
-        -0.1em -0.1em 0.2em var(--theme-bg);
+        0em 0em 0.1em var(--theme-bg),
+        0.1em 0em 0.1em var(--theme-bg),
+        -0.1em 0em 0.1em var(--theme-bg),
+        0em 0.1em 0.1em var(--theme-bg),
+        0em -0.1em 0.1em var(--theme-bg),
+        0.1em 0.1em 0.1em var(--theme-bg),
+        0.1em -0.1em 0.1em var(--theme-bg),
+        -0.1em 0.1em 0.1em var(--theme-bg),
+        -0.1em -0.1em 0.1em var(--theme-bg);
     margin: 2em 4em;
     flex: 1;
 }

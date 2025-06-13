@@ -1,8 +1,30 @@
 {
     "colors": {
-        "theme": "blue",
+        "theme": "white",
         "colorBook": {
-            "custom": {
+            "white": {
+                "themeDarkColor": "rgb(255, 255, 255)",
+                "themeLightColor": "rgb(15, 15, 15)",
+                "themeTransparentDarkColor": "rgba(255, 255, 255, 0.8)",
+                "themeTransparentLightColor": "rgba(150, 150, 150, 0.9)",
+                "themeTextColor": "rgb(255, 255, 255)",
+                "themeBackgroundColor": "rgb(0,0,0)",
+                "themeTransparentBackground": "rgba(0,0,0,0.8)",
+                "accentColor": "#e74c3c",
+                "iconImageDark": "/images/icons/icon-blue.png",
+                "iconImageLight": "/images/icons/icon-white.png"
+            },
+            "black": {
+                "themeDarkColor": "rgb(0, 0, 0)",
+                "themeLightColor": "rgb(240, 240, 240)",
+                "themeTransparentDarkColor": "rgba(0, 0, 0, 0.8)",
+                "themeTransparentLightColor": "rgba(240, 240, 240, 0.9)",
+                "themeTextColor": "rgb(0, 0, 0)",
+                "themeBackgroundColor": "rgb(255,255,255)",
+                "themeTransparentBackground": "rgba(255,255,255,0.8)",
+                "accentColor": "#e74c3c",
+                "iconImageDark": "/images/icons/icon-blue.png",
+                "iconImageLight": "/images/icons/icon-white.png"
             },
             "blue": {
                 "themeDarkColor": "rgb(14, 40, 143)",
@@ -108,6 +130,10 @@
         "name": {
             "icon": "path/to/icon/image",
             "url": "url/to/your/account"
+        },
+        "google-scholar": {
+            "icon": "/images/site-icons/google-scholar.png",
+            "url": "https://scholar.google.co.jp/citations?user=DLtGeJoAAAAJ"
         }
     }
 }
