@@ -65,8 +65,8 @@
 #site-nav {
     padding: 0.2em;
     margin: 0em;
-    background-color: var(--theme-dark);
-    color: var(--theme-bg);
+    background-color: var(--theme-bg);
+    color: var(--theme-dark);
 }
 
 #site-nav ul{
@@ -202,17 +202,15 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    background-color: var(--theme-dark);
-    color: var(--theme-text);
 }
 
 footer {
-    background-color: var(--theme-bg);
+    background-color: var(--theme-dark);
     padding: 4em 1em;
     line-height: 1.5em;
     text-align: center;
     font-size: 0.9rem;
-    color: var(--theme-text);
+    color: var(--theme-bg);
     font-family: var(--theme-font);
 }
 
@@ -247,8 +245,16 @@ header {
     font-family: var(--theme-font);
     margin-top: 0em; 
     padding: 2em 0em 0em 0em;
-    color: var(--theme-dark);
-    background-color: var(--theme-bg);
+    color: var(--theme-bg);
+    background-color: var(--theme-dark);
+}
+
+header .initials {
+    font-size: 2em;
+    vertical-align: baseline;
+    display: inline;
+    color: transparent;
+    -webkit-text-stroke: 0.05em var(--theme-bg);
 }
 
 header a {
@@ -256,7 +262,19 @@ header a {
     color: inherit;
 }
 
+header button {
+    background-color: var(--theme-dark);
+    color: var(--theme-bg);
+    border-color: var(--theme-bg);
+}
+
+header button:hover {
+    background-color: var(--theme-bg);
+    color: var(--theme-dark);
+}
+
 header hr {
+    margin: 0em;
     border: none;
     height: 2px;
     background-color: var(--theme-dark);
@@ -272,15 +290,15 @@ hr {
 main {
     color: var(--normal-text);
     text-shadow:
-        0em 0em 0.1em var(--theme-bg),
-        0.1em 0em 0.1em var(--theme-bg),
-        -0.1em 0em 0.1em var(--theme-bg),
-        0em 0.1em 0.1em var(--theme-bg),
-        0em -0.1em 0.1em var(--theme-bg),
-        0.1em 0.1em 0.1em var(--theme-bg),
-        0.1em -0.1em 0.1em var(--theme-bg),
-        -0.1em 0.1em 0.1em var(--theme-bg),
-        -0.1em -0.1em 0.1em var(--theme-bg);
+        0em 0em 0.2em var(--theme-bg),
+        0.1em 0em 0.2em var(--theme-bg),
+        -0.1em 0em 0.2em var(--theme-bg),
+        0em 0.1em 0.2em var(--theme-bg),
+        0em -0.1em 0.2em var(--theme-bg),
+        0.1em 0.1em 0.2em var(--theme-bg),
+        0.1em -0.1em 0.2em var(--theme-bg),
+        -0.1em 0.1em 0.2em var(--theme-bg),
+        -0.1em -0.1em 0.2em var(--theme-bg);
     margin: 2em 4em;
     flex: 1;
 }
@@ -310,7 +328,7 @@ main {
     }
 
     #language-switcher {
-            position: static;
+        position: static;
         margin-bottom: 0.7rem;
     }
 
