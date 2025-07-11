@@ -104,7 +104,7 @@
 }
 
 #pic-of-me {
-    max-width: min(350px, calc(100vh - 2em));
+    max-width: min(350px, calc(100vw - 3em));
 }
 
 /* class */
@@ -376,6 +376,10 @@ ul {
         margin-bottom: 0rem;
     }
 
+    main {
+        margin: 2em 1.5em;
+    }
+
     #language-switcher {
         position: static;
         margin-bottom: 0.7rem;
@@ -387,9 +391,6 @@ ul {
 }
 
 @media (max-width: 850px) {
-    main {
-        margin: 2em 1em;
-    }
     #home-top-container {
         flex-direction: column;
     }
