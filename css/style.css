@@ -56,6 +56,11 @@
     z-index: -200;
 }
 
+#home-top-container {
+    flex-direction: row;
+    justify-content: space-around;
+}
+
 #language-switcher {
     position: absolute;
     right: 1em;
@@ -98,6 +103,10 @@
     vertical-align: auto;
 }
 
+#pic-of-me {
+    max-width: 350px
+}
+
 /* class */
 .accent {
     color: var(--accent-color);
@@ -122,11 +131,23 @@
     margin-top: 0.1em;
 }
 
+.center-img {
+    display: block;
+    margin: 0 2em;
+}
+
 .first-letter {
     font-size: 1.5em;
     vertical-align: baseline;
     display: inline;
     color: var(--theme-dark);
+}
+
+.flex-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
 }
 
 .initials {
@@ -137,11 +158,31 @@
     -webkit-text-stroke: 0.05em var(--theme-dark);
 }
 
+.list-margin li {
+    margin-bottom: 1em;
+}
+
+.margin-left{
+    margin-left: 1.5em;
+}
+
+.no-dot {
+    list-style: none;
+    padding-left: 0;
+}
+
 .plain-text {
     font-size: 0.8em;
     text-decoration: none;
     font-weight: normal;
     color: inherit;  
+}
+
+.scrollable-box {
+    height: 200px;
+    overflow-y: auto;
+    background-color: var(--theme-tp-light);
+    margin: 1em;
 }
 
 .sns-icon{
@@ -177,7 +218,11 @@
 
 /* tag */
 a {
-    color: var(--theme-dark);
+    color: gray;
+}
+
+a:hover {
+    color: gray;
 }
 
 button {
@@ -303,6 +348,10 @@ main {
     flex: 1;
 }
 
+ul {
+  list-style-position: inside;
+}
+
 /* media query */
 @media (max-width: 530px) {
     #site-nav ul{
@@ -334,5 +383,18 @@ main {
 
     #pagination button{
         min-width: 10vw;
+    }
+}
+
+@media (max-width: 850px) {
+    main {
+        margin: 2em 1em;
+    }
+    #home-top-container {
+        flex-direction: column;
+    }
+    #my-name-in-top{
+        text-align: center;
+        margin-top: 1em;
     }
 }

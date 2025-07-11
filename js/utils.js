@@ -410,8 +410,9 @@ export async function tagMatchingValuation(contextsList, func, args, kwargs) {
     await Promise.all(promises);
 }
 
-export function wrapFirstLetter(targetTag, doneClass, classToAdd) {
-    const targets = document.querySelectorAll(targetTag);
+export function wrapFirstLetter(targetTag, doneClass, classToAdd, ignoreClass = 'ignore') {
+    const targets = document.querySelectorAll(`${targetTag}:not(.${ignoreClass})`);
+    console.log(`wrapFirstLetter: ${targets.length} targets found.`);
     function findFirstTextNode(node) {
         for (let child of node.childNodes) {
             if (child.nodeType === Node.TEXT_NODE && child.textContent.trim().length > 0) {
@@ -450,8 +451,8 @@ export function wrapFirstLetter(targetTag, doneClass, classToAdd) {
     });
 }
 
-export function wrapInitials(targetTag, doneClass, classToAdd) {
-    const targets = document.querySelectorAll(targetTag);
+export function wrapInitials(targetTag, doneClass, classToAdd, ignoreClass = 'ignore') {
+    const targets = document.querySelectorAll(`${targetTag}:not(${ignoreClass})`);
 
     targets.forEach(el => {
         if (el.classList.contains(doneClass)) return;

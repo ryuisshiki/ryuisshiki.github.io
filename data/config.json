@@ -134,6 +134,10 @@
         "google-scholar": {
             "icon": "/images/site-icons/google-scholar.png",
             "url": "https://scholar.google.co.jp/citations?user=DLtGeJoAAAAJ"
+        },
+        "email": {
+            "icon": "/images/site-icons/email.png",
+            "adress": "isshiki_ryuichiro[at]soken.ac.jp"
         }
     }
 }
