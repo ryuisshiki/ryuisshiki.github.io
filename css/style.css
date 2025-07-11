@@ -104,7 +104,7 @@
 }
 
 #pic-of-me {
-    max-width: 350px
+    max-width: min(350px,100vh - 1em);
 }
 
 /* class */
